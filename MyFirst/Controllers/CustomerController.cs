@@ -82,7 +82,7 @@ namespace MyFirst.Controllers
         {
             try {
                 customerBL.DeleteCustomer(id);
-                return Ok();
+                return Ok("Customer Deleted Successfully");
             }
             catch (Exception ex)
             {
