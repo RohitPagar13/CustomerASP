@@ -58,52 +58,90 @@ namespace RepoLayer.Service
 
         public void DeleteCustomer(int id)
         {
-            Customer c;
-            if ((c=_db.customers.Find(id))!=null)
+            Customer? c = _db.customers.Find(id);
+            try
             {
+                if (c == null)
+                {
+                    throw new CustomerNotFoundException("Customer with the specified ID does not exist.");
+                }
                 _db.customers.Remove(c);
                 _db.SaveChanges();
             }
-            else
+            catch(CustomerNotFoundException ex)
             {
-                throw new CustomerNotFoundException("Customer with the specified ID does not exist.");
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
             }
         }
 
         public List<Customer> GetAll()
         {
-            return _db.customers.ToList<Customer>();
+            try
+            {
+                return _db.customers.ToList<Customer>();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                throw;
+            }
+            
         }
 
         public Customer GetCustomer(int id)
         {
-            Customer c= _db.customers.Find(id);
-            if (c != null)
+            try
             {
+                Customer? c = _db.customers.Find(id);
+                if (c == null)
+                {
+                    throw new CustomerNotFoundException("Customer with the specified ID does not exist.");
+                }
                 return c;
             }
-            else
+            catch (CustomerNotFoundException e)
             {
-                throw new CustomerNotFoundException("Customer with the specified ID does not exist.");
+                Console.WriteLine(e.Message);
+                throw;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+                throw;
             }
         }
 
         public Customer UpdateCustomer(int id, CustomerModel cm)
         {
-            Customer c;
-            if ((c = _db.customers.Find(id)) != null)
+            try
             {
-                c.FName=cm.FName;
-                c.LName=cm.LName;
+                Customer? c= _db.customers.Find(id);
+                if (c == null)
+                {
+                    throw new CustomerNotFoundException("Customer with the specified ID does not exist.");
+                }
+                c.FName = cm.FName;
+                c.LName = cm.LName;
                 c.email = cm.email;
                 c.phone = cm.phone;
                 _db.customers.Update(c);
                 _db.SaveChanges();
                 return c;
             }
-            else
+            catch(CustomerNotFoundException e)
             {
-                throw new CustomerNotFoundException("Customer with the specified ID does not exist.");
+                Console.WriteLine(e.Message);
+                throw;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                throw;
             }
         }
     }
