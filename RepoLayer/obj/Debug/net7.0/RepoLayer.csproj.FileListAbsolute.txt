@@ -1,0 +1,17 @@
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\bin\Debug\net7.0\RepoLayer.deps.json
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\bin\Debug\net7.0\RepoLayer.runtimeconfig.json
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\bin\Debug\net7.0\RepoLayer.dll
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\bin\Debug\net7.0\RepoLayer.pdb
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.csproj.AssemblyReference.cache
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.AssemblyInfoInputs.cache
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.AssemblyInfo.cs
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.csproj.CoreCompileInputs.cache
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.dll
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\refint\RepoLayer.dll
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.pdb
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.genruntimeconfig.cache
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\ref\RepoLayer.dll
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\bin\Debug\net7.0\ModelLayer.dll
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\bin\Debug\net7.0\ModelLayer.pdb
+E:\BridgeLabz\ASP.net\Trial\RepoLayer\obj\Debug\net7.0\RepoLayer.csproj.CopyComplete
